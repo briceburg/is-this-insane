@@ -24,17 +24,7 @@ $ ls ints/
 ```sh
 $ mkdir -p ints/{0..9}
 $ cd ints
-$ echo "INTEGERS=( $(echo *) )" | cop --stdin-type=shell --json 
-```
-
-#### execution
-
-* shell
-
-curl this at _your risk_
-
-```
-curl https://is-this-insane/@id@.sh | sh
+$ echo "INTEGERS=( $(echo *) )" | cop --stdin-type=shell --json
 ```
 
 ### Output
@@ -58,9 +48,19 @@ curl https://is-this-insane/@id@.sh | sh
 }
 ```
 
-### Comments
+### More
+
+#### execution
+
+* shell
+
+curl this at _your risk_
+
+```
+curl https://is-this-insane/@id@.sh | sh
+```
+
+#### discuss
 
 * WTF why not use ...
 * you sute echo ints/*  is portable and outputs a single line to be used for array definition?
-
-
