@@ -23,8 +23,7 @@ $ ls ints/
 
 ```sh
 $ mkdir -p ints/{0..9}
-$ cd ints
-$ echo "INTEGERS=( $(echo *) )" | cop --stdin-type=shell --json
+$ echo "INTEGERS=( $(cd ints ; echo *) )" | cop --stdin-type=shell --json
 ```
 
 ### Output
